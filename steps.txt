@@ -2,24 +2,25 @@
 https://github.com/phuketk0k/K8s.git
 
 
-Git steps on new machine/folder
+Git steps on new machine/folder:
 
-Create new subfolder 
+Create new subfolder -------here we name the folder 'chippy'
 
-Git init - initializes empty repo
+Git init ---------- initializes empty repo in chippy
 
-git config --global user.name "Don Centosodiego"
+git config --global user.name "Don Centosodiego" ----------create username
 
-git config --global user.email "oderaokuku@hotmail.com"
+git config --global user.email "oderaokuku@hotmail.com" ---------create email
 
- git remote add chippy  https://github.com/phuketk0k/K8s.git
+git remote add chippy  https://github.com/phuketk0k/K8s.git---------add a new chippy to remote repo. chippy used here for consistency but arbitrary
 
-Git remote -v ----- shows the remote repos you have access to 
+Git remote -v ----- shows the remote repos you have access to. Should show repos with a (pull) and (fetch)
 
-FOR PAT ACCESS
-Create token in github first, see below for perms but grant full access to repos and workflows
+FOR PAT ACCESS ------you need this to authenticate!!!
+Create token in github first, see below (&&) for perms but grant full access to repos and workflows
+It should look like this 'github_pat_XXXXXXXXXXXXXXX'
 
-Git remote set-url chippy https://username:token@github.com/username/repo.git
+Git remote set-url chippy https://<username>:<token>@github.com/username/repo.git -------------username = your git <username>; <token> is your long PAT 'github_pat_XXXXXXXXXXXXXXX'
 
 Git branch --- should return nothing for now
 Git log ------ should return a fatal error no commits yet
@@ -30,3 +31,32 @@ Git switch main --------switch to main branch and now a git log cmd returns acti
 Git add . ------adds all files in current dir
 Git commit -m ------------commits to local rep
 Git push chippy -----------saves local to remote
+
+
+
+################################################################
+APPENDIX
+
+&& - PAT permissions for repos and workflows. Set in Settings > Developer Settings > Personal access tokens > Fine-grained tokens
+
+Actions=
+Access: Read and write
+Administration
+Access: Read and write
+Commit statuses
+Access: Read and write
+Contents
+Access: Read and write
+Custom properties
+Access: Read and write
+Deployments
+Access: Read and write
+Issues
+Access: Read and write
+Merge queues
+Access: Read and write
+Metadata
+Access: Read-only
+Pull requests
+Access: Read and write
+
