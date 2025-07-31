@@ -1,4 +1,4 @@
-######################
+##############https://<username>:<token>@github.com/username/repo.git ########
 https://github.com/phuketk0k/K8s.git
 
 
@@ -15,6 +15,9 @@ git config --global user.email "oderaokuku@hotmail.com" ---------create email
 git remote add chippy  https://github.com/phuketk0k/K8s.git---------add a new chippy to remote repo. chippy used here for consistency but arbitrary
 
 Git remote -v ----- shows the remote repos you have access to. Should show repos with a (pull) and (fetch)
+
+
+Should return https://<username>:<token>@github.com/username/repo.git 
 
 FOR PAT ACCESS ------you need this to authenticate!!!
 Create token in github first, see below (&&) for perms but grant full access to repos and workflows
