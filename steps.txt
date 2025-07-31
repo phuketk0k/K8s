@@ -1,0 +1,32 @@
+######################
+https://github.com/phuketk0k/K8s.git
+
+
+Git steps on new machine/folder
+
+Create new subfolder 
+
+Git init - initializes empty repo
+
+git config --global user.name "Don Centosodiego"
+
+git config --global user.email "oderaokuku@hotmail.com"
+
+ git remote add chippy  https://github.com/phuketk0k/K8s.git
+
+Git remote -v ----- shows the remote repos you have access to 
+
+FOR PAT ACCESS
+Create token in github first, see below for perms but grant full access to repos and workflows
+
+Git remote set-url chippy https://username:token@github.com/username/repo.git
+
+Git branch --- should return nothing for now
+Git log ------ should return a fatal error no commits yet
+
+Git fetch chippy ----------should pull from remote
+Git switch main --------switch to main branch and now a git log cmd returns activity done on the remote branch
+
+Git add . ------adds all files in current dir
+Git commit -m ------------commits to local rep
+Git push chippy -----------saves local to remote
