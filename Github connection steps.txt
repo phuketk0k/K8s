@@ -6,6 +6,8 @@ Git steps on new machine/folder:
 
 Create new subfolder -------here we name the folder 'chippy'
 
+cd into new folder
+
 Git init ---------- initializes empty repo in chippy
 
 git config --global user.name "Don Centosodiego" ----------create username
